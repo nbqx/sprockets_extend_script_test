@@ -1,0 +1,1 @@
+var obj = "this object placed 001.jsx";
