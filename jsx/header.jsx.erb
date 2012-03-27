@@ -1,1 +1,6 @@
-<%= ENV["INDESIGN_VERSION"] || "#target InDesign-7.0" %>
+<% unless ENV["INDESIGN_VERSION"].nil?  %>
+<%= ENV["INDESIGN_VERSION"] %>
+<% else %>
+<%= "#target InDesign-7.0" %>
+<% ENV["INDESIGN_VERSION"] = "#target InDesign-7.0" %>
+<% end %>

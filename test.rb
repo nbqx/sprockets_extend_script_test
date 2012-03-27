@@ -1,5 +1,7 @@
 %w(sprockets fileutils).each{|x| require x}
 
+ENV["INDESIGN_VERSION"] = "#target InDesign-7.0"
+
 jsx_main = 'index.jsx'
 jsx_folder = './jsx'
 build_folder = './build'
